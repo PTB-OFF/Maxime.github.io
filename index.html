@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="stylecss/style.css" />
+		<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+		<title>Portfolio</title>
+	</head>
+	<body>
+		<div class="sidebar">
+			<div class="logo-details">
+				<img class="imgprof" src="images/EmojiMaximeFELTRIN.png" alt="photo de profile">
+				<div class="logo_name">Maxime Feltrin</div>
+				<i class='bx bx-menu' id="btn" ></i>
+			</div>
+			<ul class="nav-list">
+				  <li>
+					<i class='bx bx-search' ></i>
+					 <input type="text" placeholder="Rechercher...">
+					 <span class="tooltip">Rechercher</span>
+				  </li>
+				  <li>
+					<a href="#accueil">
+					  <i class='bx bx-grid-alt'></i>
+					  <span class="links_name">Accueil</span>
+					</a>
+					 <span class="tooltip">Accueil</span>
+				  </li>
+				<li>
+					<a href="#mes-projets">
+						<i class='bx bx-folder' ></i>
+						<span class="links_name">Mes projets</span>
+					</a>
+					<span class="tooltip">Mes projets</span>
+				</li>
+				<li>
+					<a href="#intérêts">
+						<i class='bx bx-book-content' ></i>
+						<span class="links_name">Mes centres d'intérêts</span>
+					</a>
+					<span class="tooltip">Mes centres d'intérêts</span>
+				</li>
+				<li>
+					<a href="#contact">
+						<i class='bx bx-mail-send' ></i>
+						<span class="links_name">Me contacter</span>
+					</a>
+					<span class="tooltip">Me contacter</span>
+				</li>
+				</ul>
+			</div>
+			
+			<script>
+			let sidebar = document.querySelector(".sidebar");
+			let closeBtn = document.querySelector("#btn");
+			let searchBtn = document.querySelector(".bx-search");
+			
+			closeBtn.addEventListener("click", ()=>{
+				sidebar.classList.toggle("open");
+				menuBtnChange();
+			});
+			
+			searchBtn.addEventListener("click", ()=>{
+				sidebar.classList.toggle("open");
+				menuBtnChange();
+			});
+			
+			
+			function menuBtnChange() {
+			if(sidebar.classList.contains("open")){
+				closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+			}else {
+				closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+			}
+			}
+			</script>
+		</div>
+		<section class="home-section">
+			<header>
+				<h1 id="accueil">Maxime Feltrin</h1>
+				</br>
+				<p>Bonjour, je m'appelle Maxime Feltrin, j'ai 18 ans et je suis étudiant en première année à l'Estiam.</p>
+				<p>En 2021, j'ai obtenu mon bac avec mention assez bien en filière générale avec les spécialités maths et numérique et sciences informatiques. Je parle Français, Anglais et Espagnol.</p>
+				<p>J'ai travaillé pendant 1 mois pour une entreprise de test consommateur et j'ai fais mon stage de 3<sup>ème</sup> dans un magasin de vente de vêtements</p>
+				<p>En 2026, j'espère obtenir mon diplôme d'ingénieur et travailler dans la cybersécurité.</p>
+				</br>
+				<button><a href="images/CV ÉSTIAM E1 Maxime FELTRIN.pdf" target="_blank" download>Télécharger mon CV</a></button>
+			</header>
+
+			<section class="presentation-image">
+				<img src="images/img2.jpg"  alt="img" />
+			</section>
+
+			<section class="pro-inte">
+				<h1 id="mes-projets">Projets réalisés</h1>
+				<div class="projets">
+					<div class="projet">
+						<a href="html/projet.html" target="_blank">
+						<h4>Machine de Turing</h4>
+						<p class="description">
+							Cette machine, dite universelle, permet de réaliser des calculs en déplaçant le ruban et en changeant les valeurs des cases.
+						</p>
+						<p class="dates">Dates 2020 - 2021</p>
+						</a>
+					</div>
+					<div class="projet">
+						<a href="html/projet.html" target="_blank">
+						<h4>Tetris</h4>
+						<p class="description">
+							Ce Tetris est en mode solo, le but du jeu est d'atteindre le score le plus élevé possible. Il suit tout de même les règles du jeu original.
+						</p>
+						<p class="dates">Dates 2020 - 2021</p>
+						</a>
+					</div>
+					<div class="projet">
+						<a href="html/projet.html" target="_blank">
+						<h4>Doodle Jump</h4>
+						<p class="description">
+							Dans ce Doodle Jump, le but est de guider la forme ronde le plus haut possible sur une série de plateformes sans tomber.
+						</p>
+						<p class="dates">Dates 2019 - 2020</p>
+						</a>
+					</div>
+					<div class="projet">
+						<a href="html/projet.html" target="_blank">
+						<h4>Morpion</h4>
+						<p class="description">
+							Le morpion est un jeu de réflexion à deux joueurs au tour par tour et dont le but est de créer le premier un alignement sur une grille.
+						</p>
+						<p class="dates">Dates 2019 - 2020</p>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="pro-inte">
+				<h1 id="intérêts">Mes centres d'intérêts</h1>
+				<div class="projets">
+					<div class="projet">
+						<a href="html/sport.html" target="_blank">
+						<h4>Le Sport</h4>
+						<p class="description">
+							Cliquer pour consulter
+						</p>
+						</a>
+					</div>
+					<div class="projet">
+						<a href="html/musique.html" target="_blank">
+						<h4>La Musique</h4>
+						<p class="description">
+							Cliquer pour consulter
+						</p>
+						</a>
+					</div>
+					<div class="projet">
+						<a href="html/serie.html" target="_blank">
+						<h4>Les Série, Films et Animés</h4>
+						<p class="description">
+							Cliquer pour consulter
+						</p>
+						</a>
+					</div>
+					<div class="projet">
+						<a href="html/jeux.html" target="_blank">
+						<h4>Les Jeux Vidéos</h4>
+						<p class="description">
+							Cliquer pour consulter
+						</p>
+						</a>
+					</div>
+				</div>
+			</section>
+			<footer>
+				<div class="colonne">
+					<h3 id="contact">Me contacter</h3>
+					<p><a href="maxim-jules-elliott.feltrin@estiam.com">maxim-jules-elliott.feltrin@estiam.com</a></p>
+					<p><a href="maximefeltrin@gmail.com">maximefeltrin@gmail.com</a></p>
+					<p><a href="https://www.linkedin.com/in/maxime-feltrin-80a830224/" target="_blank">Linkedin</a></p>
+				</div>
+				<div class="colonne">
+					<h3>Mes Réseaux</h3>
+					
+					<p><a href="https://www.facebook.com/maxime.feltrin" target="_blank">Facebook</a></p>
+					<p><a href="https://www.instagram.com/le_vrai_m.a.x.i.m.e/" target="_blank">Instagram</a></p>
+				</div>
+				<div class="colonne">
+					<h3>Mon GitHub</h3>
+					<p><a href="https://github.com/PTB-OFF/PTB-OFF.github.io" target="_blank">GitHub</a></p>
+				</div>
+			</footer>
+		</section>
+	</body>
+</html>

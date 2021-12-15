@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../stylecss/style.css" />
+		<link rel="stylesheet" href="../stylecss/style1.css" />
+		<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+		<title>La musique</title>
+	</head>
+	<body>
+		<div class="sidebar">
+			<div class="logo-details">
+				<img class="imgprof" src="../images/EmojiMaximeFELTRIN.png" alt="photo de profile">
+				<div class="logo_name">Maxime Feltrin</div>
+				<i class='bx bx-menu' id="btn" ></i>
+			</div>
+			<ul class="nav-list">
+				  <li>
+					<i class='bx bx-search' ></i>
+					 <input type="text" placeholder="Rechercher...">
+					 <span class="tooltip">Rechercher</span>
+				  </li>
+				  <li>
+					<a href="../index.html">
+					  <i class='bx bx-grid-alt'></i>
+					  <span class="links_name">Accueil</span>
+					</a>
+					 <span class="tooltip">Accueil</span>
+				  </li>
+				<li>
+					<a href="../index.html">
+						<i class='bx bx-folder' ></i>
+						<span class="links_name">Mes projets</span>
+					</a>
+					<span class="tooltip">Mes projets</span>
+				</li>
+				<li>
+					<a href="../index.html">
+						<i class='bx bx-book-content' ></i>
+						<span class="links_name">Mes centres d'intérêts</span>
+					</a>
+					<span class="tooltip">Mes centres d'intérêts</span>
+				</li>
+				<li>
+					<a href="#contact">
+						<i class='bx bx-mail-send' ></i>
+						<span class="links_name">Me contacter</span>
+					</a>
+					<span class="tooltip">Me contacter</span>
+				</li>
+				</ul>
+			</div>
+			
+			<script>
+			let sidebar = document.querySelector(".sidebar");
+			let closeBtn = document.querySelector("#btn");
+			let searchBtn = document.querySelector(".bx-search");
+			
+			closeBtn.addEventListener("click", ()=>{
+				sidebar.classList.toggle("open");
+				menuBtnChange();
+			});
+			
+			searchBtn.addEventListener("click", ()=>{
+				sidebar.classList.toggle("open");
+				menuBtnChange();
+			});
+			
+			
+			function menuBtnChange() {
+			if(sidebar.classList.contains("open")){
+				closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+			}else {
+				closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+			}
+			}
+			</script>
+		</div>
+		<section class="home-section">
+			
+            <section class="pro-inte">
+				<h1 style="margin-bottom: 50px;">Les différents style de musique que j'écoute</h1>
+				<div class="projets">
+					<div class="projetjeu" height="300" width="500">
+						<h4>Travailler/Réviser</h4>
+						<p class="description">
+							<iframe width="500" height="300" src="https://www.youtube.com/embed/s_LDtEkcdNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</p>
+					</div>
+					<div class="projetjeu">
+						<h4>Sesssion de jeu</h4>
+						<p class="description">
+							<iframe width="500" height="300" src="https://www.youtube.com/embed/GNWLILeztaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</p>
+					</div>
+					<div class="projetjeu">
+						<h4>Manque de motivation</h4>
+						<p class="description">
+							<iframe width="500" height="300" src="https://www.youtube.com/embed/T6nJHnw76pw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</p>
+					</div>
+					<div class="projetjeu">
+						<h4>Détente</h4>
+						<p class="description">
+							<iframe width="500" height="300" src="https://www.youtube.com/embed/zI7WGJFKfsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</p>
+					</div>
+				</div>
+			</section>
+            <footer style="margin-right: 110px;">
+				<div class="colonne">
+					<h3 id="contact">Me contacter</h3>
+					<p><a href="maxim-jules-elliott.feltrin@estiam.com">maxim-jules-elliott.feltrin@estiam.com</a></p>
+					<p><a href="maximefeltrin@gmail.com">maximefeltrin@gmail.com</a></p>
+					<p><a href="https://www.linkedin.com/in/maxime-feltrin-80a830224/" target="_blank">Linkedin</a></p>
+				</div>
+				<div class="colonne">
+					<h3>Mes Réseaux</h3>
+					
+					<p><a href="https://www.facebook.com/maxime.feltrin" target="_blank">Facebook</a></p>
+					<p><a href="https://www.instagram.com/le_vrai_m.a.x.i.m.e/" target="_blank">Instagram</a></p>
+				</div>
+				<div class="colonne">
+					<h3>Mon GitHub</h3>
+					<p><a href="https://github.com/PTB-OFF/PTB-OFF.github.io" target="_blank">GitHub</a></p>
+				</div>
+			</footer>
+        </section>
+    </body>
+</html>

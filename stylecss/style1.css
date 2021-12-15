@@ -1,0 +1,41 @@
+.home-section .pro-inte .projetjeu {
+	margin-right: 20px;
+	max-width: 530px;
+	border: thick black solid;
+	overflow: auto;
+	border-color: rgb(53, 53, 53);
+}
+.home-section .pro-inte .projetjeu:hover{
+	border-color: rgb(34, 34, 34);
+	background-color: rgb(34, 34, 34);
+	box-shadow:0 17px 23px 0 rgba(0, 0, 0, 0.700),0 17px 23px 0 rgba(0, 0, 0, 0.750);
+}
+.home-section .pro-inte h3 {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+.section-serie{
+	position: relative;
+  	background: rgb(53, 53, 53);
+ 	min-height: 100vh;
+  	top: 0;
+  	left: 78px;
+  	width: calc(100% - 78px);
+  	transition: all 0.5s ease;
+  	z-index: 2;
+	text-align: center;
+	color: whitesmoke;
+}
+.section-serie .lignesEspacees{
+ border-collapse : separate;
+ border-spacing : 80px;
+}
+.section-serie .taille{
+    font-size: 20px;
+}
+.section-serie .tailleimg img{
+	height: 300;
+	width: 500;
+}
